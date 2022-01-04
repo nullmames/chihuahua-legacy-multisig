@@ -1,9 +1,9 @@
 import StackableContainer from "../layout/StackableContainer";
 
 const MultisigHoldings = (props) => {
-  const uatomToAtom = (uatom) => {
-    if (uatom === 0) return 0;
-    return uatom / 1000000;
+  const uatomToAtom = (uhuahua) => {
+    if (uhuahua === 0) return 0;
+    return uhuahua / 1000000;
   };
 
   return (
