@@ -20,7 +20,7 @@ class MultiSigForm extends React.Component {
     this.state = {
       pubkeys: [emptyPubKeyGroup(), emptyPubKeyGroup()],
       threshold: 2,
-      processing: false,
+      processing: false
     };
   }
 
@@ -161,8 +161,8 @@ class MultiSigForm extends React.Component {
                     width="100%"
                     placeholder={
                       pubkeyGroup.isPubkey
-                        ? "Akd/qKMWdZXyiMnSu6aFLpQEGDO0ijyal9mXUIcVaPNX"
-                        : "cosmos1vqpjljwsynsn58dugz0w8ut7kun7t8ls2qkmsq"
+                        ? "AtQbuGTkRQriVcO77gEJlPEYMgvGYTqlY8abw1rT6Eje\"
+                        : "chihuahua157sl79mvad0swjxmuke3jmsmfl0fn76wp5hcfy"
                     }
                     error={pubkeyGroup.keyError}
                     onBlur={(e) => {
