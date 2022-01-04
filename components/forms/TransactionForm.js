@@ -54,7 +54,7 @@ class TransactionForm extends React.Component {
   };
 
   handleCreate = async () => {
-    if (this.state.toAddress.length === 45) {
+    if (this.state.toAddress.length === 48) {
       this.setState({ processing: true });
       const tx = this.createTransaction(
         this.state.toAddress,
