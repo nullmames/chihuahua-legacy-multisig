@@ -1,8 +1,8 @@
 import HashView from "./HashView";
 import StackableContainer from "../layout/StackableContainer";
 
-const uatomToAtom = (uatom) => {
-  return uatom / 1000000;
+const uhuahuaToHuahua = (uhuahua) => {
+  return uhuahua / 1000000;
 };
 export default (props) => (
   <StackableContainer lessPadding lessMargin>
@@ -10,7 +10,7 @@ export default (props) => (
       {props.tx.msgs && (
         <li>
           <label>Amount:</label>
-          <div>{uatomToAtom(props.tx.msgs[0].value.amount[0].amount)} ATOM</div>
+          <div>{uhuahuaToHuahua(props.tx.msgs[0].value.amount[0].amount)} HUAHUA</div>
         </li>
       )}
       {props.tx.msgs && (
@@ -24,7 +24,7 @@ export default (props) => (
       {props.tx.fee && (
         <li>
           <label>Gas:</label>
-          <div>{props.tx.fee.gas} UATOM</div>
+          <div>{props.tx.fee.gas} UHUAHUA</div>
         </li>
       )}
       {props.tx.memo && (
